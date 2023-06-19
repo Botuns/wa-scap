@@ -1,0 +1,17 @@
+{
+  "name": "leads_whatsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^20.7.1",
+    "qrcode-terminal": "^0.12.0",
+    "rimraf": "^5.0.1",
+    "rxjs": "^7.8.1"
+  }
+}
