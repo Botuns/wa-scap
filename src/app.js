@@ -39,7 +39,7 @@ async function start({ showBrowser = false, qrCodeData = false, session = true }
         page = await browser.newPage();
         // prevent dialog blocking page and just accept it(necessary when a message is sent too fast)
         page.on("dialog", async dialog => { await dialog.accept(); });
-        // fix the chrome headless mode true issues
+        // fix the chrome headless mode true issues: i think its done
         // https://gitmemory.com/issue/GoogleChrome/puppeteer/1766/482797370
         await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36");
         page.setDefaultTimeout(60000);
@@ -145,7 +145,7 @@ async function QRCodeExeption(msg) {
 }
 
 /**
- * @param {string} phone phone number: '5535988841854'
+ * @param {string} phone phone number: '2349134516158'
  * @param {string} message Message to send to phone number
  * Send message to a phone number
  */
@@ -175,7 +175,7 @@ async function sendTo(phoneOrContact, message) {
 }
 
 /**
- * @param {array} phones Array of phone numbers: ['5535988841854', ...]
+ * @param {array} phones Array of phone numbers: ['2349134516158', ...]
  * @param {string} message Message to send to every phone number
  * Send same message to every phone number
  */
